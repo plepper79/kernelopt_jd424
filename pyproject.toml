@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plepper79-kernelopt_jd424"
+version = "0.1.0"
+description = "按段落统计AI 芯片算子优化工程师·缓存命中率的归因相关的长度分布，标出过长、过短与重复表达的部分"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "plepper79" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://plepper79.github.io"
+Repository = "https://github.com/plepper79/kernelopt_jd424"
+Issues = "https://github.com/plepper79/kernelopt_jd424/issues"
+
+[project.scripts]
+kernelopt_jd424 = "kernelopt_jd424:main"
+
+[tool.setuptools]
+py-modules = ["kernelopt_jd424"]
